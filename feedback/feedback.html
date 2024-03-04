@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Feedback</title>
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <h1 id="firstItem">3.<br>Feedback</h1>
+
+    <hr>
+
+    <p>For in-class presentations or feedback talks, I feel a lot of pressure to show something “good” that already makes sense and looks great. The feeling that I’m supposed to have it all figured out from the start and that at a feedback group talk I’m supposed to “perform”. This pressure can be really constructive, but in the early stages of a project it makes me too critical about my own ideas when they're still quite general.</p>
+
+    <p>This is what my brainstorming can look like:</p>
+
+    <img src="media/notion.png">
+    <img src="media/maospes.png">
+
+    <p>The longer I’ve been at the KABK the more I’ve become used to dealing with this: taking other’s feedback seriously, but also keep a certain distance between my ideas and interests and others’ opinions. For this effect, I’ve been enjoying thinking of in-class presentations and moments of feedback as experiments. Less “what do they think of my project”. Instead, taking an almost scientific approach to analysing a third party’s reaction to my work. More “what can I learn about how others interact with what I’ve made?”</p>
+
+    <p>Here's one of my experiments and the feedback I got from it:</p>
+
+    <img id="imageSwap" src="media/0.jpg">
+    <img id="lastItem" src="media/feedback.png">
+
+
+    <div id="nav">
+        <h2><a href="../index.html">0. Start</a></h2>
+        <h2><a href="../narrative/narrative.html">1. Narrative</a></h2>
+        <h2><a href="../coding/coding.html">2. Coding</a></h2>
+        <h2><u>3. Feedback</u></h2>
+        <h2><a href="../conclusion/conclusion.html">4. Conclusion</a></h2>
+    </div>
+    
+</body>
+<script>
+    let imageSwapDiv = document.getElementById("imageSwap");
+
+    let index = 0;
+
+    setInterval(function () {
+
+        if(index <10){
+            imageSwapDiv.src = "media/" + index + ".jpg";
+            index++
+        } else if(index > 9){
+            index = 0;
+            imageSwapDiv.src = "media/" + index + ".jpg";
+        }
+
+    }, 400);
+</script>
+</html>

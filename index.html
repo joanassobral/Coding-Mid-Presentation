@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0. Start</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div  id="firstItem"></div>
+
+    <img id="imageSwap" src="media/0.jpg">
+
+    <h1>0.<br>
+    I’m Joana, the book I’m translating into the web is
+    <a href="https://www.juliangermain.com/books/no-mundo-maravilhoso-do-futebol" target="_blank">No Mundo Maravilhoso do Futebol</a></h1>
+
+    <hr>
+
+
+    <p>It is a photography book about the role of football in the lives of the children of Cascalho, a favela in Belo Horizonte, Brazil. Through a series of photographs, paintings, and texts, this book beautifully portrays the presence of football as an inspiration for a better life to the members of this community.</p>
+    <p>This presentation focuses on my experience of this project so far, divided into three parts: Narrative, Coding, and Feedback. Use the titles at the top of the page to navigate.</p>
+
+
+    <div  id="lastItem"></div>
+
+
+    <div id="nav">
+        <h2><u>0. Start</u></h2>
+        <h2><a href="narrative/narrative.html">1. Narrative</a></h2>
+        <h2><a href="coding/coding.html">2. Coding</a></h2>
+        <h2><a href="feedback/feedback.html">3. Feedback</a></h2>
+        <h2><a href="conclusion/conclusion.html">4. Conclusion</a></h2>
+    </div>
+    
+</body>
+<script>
+    let imageSwapDiv = document.getElementById("imageSwap");
+
+    let index = 0;
+
+    setInterval(function () {
+
+        if(index <10){
+            imageSwapDiv.src = "media/" + index + ".jpg";
+            index++
+        } else if(index > 9){
+            index = 0;
+            imageSwapDiv.src = "media/" + index + ".jpg";
+        }
+
+    }, 1000);
+</script>
+</html>
